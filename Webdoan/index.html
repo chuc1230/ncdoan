@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thế Giới Công Nghệ   </title>
+        <meta charset ="urf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/76f764c99a.js" crossorigin="anonymous"></script><!-- link sử dụng icon fontawesome-->
+    </head>
+    <body>
+       <img src="image/anh2.PNG" >
+       <nav>
+           <ul>
+               <li><a href=""><img src="image/logo.PNG"></a></li><!-- logo-->
+               <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-sort-down"></i> Thành Phố</button>
+                <div class="dropdown-content">
+                  <a href="#">Hà Nội</a>
+                  <a href="#">Hồ Chí Minh</a>
+                  <a href="#">Đà Nẵng</a>
+                  <!-- Thêm các thành phố khác tại đây -->
+                </div>
+              </div>
+              
+               <li>
+                <input id="search-input" type="text" onfocus="clearText()" onblur="restoreText()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li><!-- ô search-->
+            <!-- hàm ẩn chữ -->
+            <script>
+                var searchInput = document.getElementById("search-input");
+                var defaultText = "Bạn cần gì";
+            
+                function clearText() {
+                    if (searchInput.value === defaultText) {
+                        searchInput.value = "";
+                    }
+                }
+            
+                function restoreText() {
+                    if (searchInput.value === "") {
+                        searchInput.value = defaultText;
+                    }
+                }
+            </script>
+            <!-- hàm ẩn chữ -->
+            
+            <li><a href=""><button><i class="fa-solid fa-cart-shopping"></i>Gio hang</button></a></li>
+            <li><a href="">Lịch sử đơn hàng </a></li>
+            <li><a href="">Hỏi đáp </a></li>
+           </ul>
+       </nav>
+    </body>
